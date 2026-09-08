@@ -1,0 +1,15 @@
+{
+  "name": "cloud-task-manager-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple Node.js API for the AWS 3-tier Cloud Engineer project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}

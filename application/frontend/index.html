@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cloud Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">AWS 3-Tier Cloud Project</p>
+      <h1>Cloud Task Manager</h1>
+      <p>EC2 + ALB + RDS + S3</p>
+    </header>
+
+    <section class="card">
+      <h2>Create task</h2>
+      <form id="taskForm">
+        <input id="title" placeholder="Task title" required>
+        <textarea id="description" placeholder="Description"></textarea>
+        <button>Create task</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <h2>Tasks</h2>
+        <button id="refresh" type="button">Refresh</button>
+      </div>
+      <div id="status">Loading...</div>
+      <ul id="tasks"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
